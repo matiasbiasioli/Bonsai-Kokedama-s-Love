@@ -1,0 +1,136 @@
+// vista mobile
+
+.main__header {
+  background-color: rgb(115, 174, 33);
+  &__logo {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    color: white;
+    text-decoration: none;
+    margin-left: 2.5rem;
+    &:hover {
+      color: rgb(213, 206, 206);
+    }
+    span {
+      color: $love-logo;
+    }
+    p {
+      font-family: "Montserrat", sans-serif;
+      width: 85px;
+      line-height: 1.2;
+      font-weight: bold;
+      padding-left: 5px;
+      padding-top: 5px;
+    }
+    img {
+      width: 75px;
+    }
+  }
+  .btn-hamburguesa {
+    font-size: 0.7rem;
+    margin: auto;
+  }
+}
+.nav__menu {
+  font-weight: bold;
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: rgb(213, 206, 206);
+    }
+  }
+  li:hover ul {
+    background-color: rgb(129, 61, 129);
+    display: block;
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+  }
+}
+
+.nav__usuario__carrito {
+  padding: 10px 0px;
+  &__container {
+    text-align: center;
+    margin: auto;
+  }
+}
+#usuario {
+  padding-right: 25px;
+}
+#usuario,
+#carrito,
+#registro {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    color: rgb(213, 206, 206);
+  }
+}
+
+// Vista tablet
+
+@media (min-width: 766px) {
+  .main__header {
+    padding-left: 2rem;
+    &__logo {
+      margin-left: 5rem;
+      img {
+        width: 95px;
+      }
+    }
+    .btn-hamburguesa {
+      font-size: 1.1rem;
+    }
+  }
+  .nav__usuario__carrito {
+    padding: 10px 0px;
+    &__container {
+      margin-left: 315px;
+    }
+  }
+}
+
+//   Vista Desktop
+
+@media (min-width: 992px) {
+  .main__header {
+    padding-left: 0%;
+    &__logo {
+      margin-left: 1rem;
+      padding-right: 40px;
+    }
+    img {
+      width: 95px;
+      padding-bottom: 10px;
+    }
+    p {
+      width: 120px;
+      line-height: 1.1;
+      font-size: 1.4rem;
+      padding-left: 5px;
+    }
+  }
+  .nav__menu {
+    a {
+      font-size: 1.1rem;
+      margin-right: 5px;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+  .nav__usuario__carrito__container {
+    padding: 10px 0px;
+    margin-left: 0px;
+    margin-right: 50px;
+    #usuario,
+    #carrito,
+    #registro {
+      font-size: 1.1rem;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+}

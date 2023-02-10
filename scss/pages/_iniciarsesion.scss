@@ -1,0 +1,38 @@
+#formulario__usuario {
+  background-color: $bg-secondary;
+  padding: 30px;
+  .form__usuario {
+      width: 90%;
+      margin: auto;
+  }
+} 
+#boton__usuario {
+  background-color: rgb(2, 2, 28);
+  color: $light;
+  width: 40%;
+  padding: 10px;
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(23, 23, 93);
+  }
+}
+
+// Vista Desktop
+
+@media (min-width:992px) {
+  #formulario__usuario {
+    padding: 60px;
+    .form__usuario {
+        width: 40%;
+    }
+  } 
+  #boton__usuario {
+      color: $light;
+      width: 20%;
+      padding: 10px;
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(23, 23, 93);
+      }
+  }
+}

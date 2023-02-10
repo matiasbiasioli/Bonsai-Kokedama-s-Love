@@ -1,0 +1,88 @@
+.row__sobre__nosotros__container {
+  h2 {
+    margin: auto;
+    font-family: "Anton", sans-serif;
+  }
+  p {
+    margin: 10px auto;
+    font-family: "Montserrat", sans-serif;
+    font-size: larger;
+  }
+  .row__sobre__nosotros__content {
+    .img__serrana {
+      width: 100%;
+    }
+    .card__sobre__nosotros {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      border-radius: 10px;
+      background-image: url(/imagenes/background-grey.jpg);
+      background-size: cover;
+      padding: 10px;
+      box-shadow: 1px 1px 6px 2px black;
+      h4 {
+        padding-top: 10px;
+        font-size: 18px;
+        font-family: "Anton", sans-serif;
+      }
+      p {
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+      }
+      .img__perfil {
+        width: 50%;
+        margin: auto;
+      }
+    }
+  }
+}
+.parrafo-con-fondo {
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  background-image: url(/imagenes/background-grey.jpg);
+  background-size: cover;
+  text-transform: uppercase;
+  padding: 1.5rem;
+}
+
+// vista tablet
+@media (min-width:766px) {
+  .row__sobre__nosotros__content {
+    .img__serrana {
+      width: 90vw;
+    }
+    .card__sobre__nosotros {
+      margin: 20px auto !important;
+      display: flex;
+      width: 60% !important;
+      h4 {
+        padding-top: 10px;
+        font-size: 55px;
+      }
+    }
+  }
+}
+
+// vista Desktop
+
+@media (min-width: 992px) {
+  .row__sobre__nosotros__content {
+    display: flex;
+    .img__serrana {
+      height: 480px;
+    }
+    .card__sobre__nosotros {
+      h4,
+      p {
+        padding-left: 10px;
+      }
+    }
+  } 
+  .parrafo-con-fondo {
+    font-size: 2.2rem;
+    padding: 2rem;
+  }
+}

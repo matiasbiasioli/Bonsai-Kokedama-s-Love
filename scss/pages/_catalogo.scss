@@ -1,0 +1,95 @@
+.card-catalogo-bonsai {
+  padding: 0%;
+  width: 15rem;
+  height: fit-content;
+  margin: 20px auto;
+  img {
+    height: 30vh;
+  }
+  &:not(:first-child) {
+    display: block;
+  }
+  .card-body {
+    .card-title {
+      font-size: 1.2rem;
+    }
+    .card-text {
+      font-size: 1rem;
+    }
+    .btn {
+      border-radius: 40px;
+    } 
+  } 
+}
+
+.card-catalogo-kokedama {
+  padding: 0%;
+  margin: 20px auto;
+  height: fit-content;
+  width: 16rem;
+  img {
+    height: 300px;
+  }
+  &:not(:first-child) {
+    display: block;
+  }
+  .card-body {
+    .card-title {
+      font-size: 1.2rem;
+    }
+    .card-text {
+      font-size: 1rem;
+    }
+    .btn {
+      border-radius: 40px;
+    } 
+  } 
+}
+
+.row-cards {
+  h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+}
+
+// Inicio vista Tablet
+
+@media (min-width:490px) {
+    .card-catalogo-bonsai{
+      width: 18rem;
+      img {
+        height: 20vh;
+      }
+    }
+    
+}
+
+// Inicio vista desktop
+
+@media (min-width: 992px) {
+  .row-cards {
+    h2 {
+      font-size: 2.5rem;
+    }
+    .card-catalogo-bonsai {
+      padding: 0%;
+      height: auto;
+      img {
+        height: 30vh;
+      }
+    }
+    .card-catalogo-kokedama {
+      padding: 0%;
+      height: auto;
+    }
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+ .row-bonsai {
+    h2 {
+      margin: 10px auto;
+      font-family: 'Anton', sans-serif; 
+    }
+    p {
+      margin: 10px auto;
+      font-size: larger;
+      font-family: 'Montserrat', sans-serif;
+    }  
+    .titulo2 {
+      display: flex;
+      justify-content: end;
+    }
+    .titulo3 {
+      display: flex;
+      justify-content: center
+    }
+  }
+  
+  #cuidados-bonsai {
+    margin: 40px auto;
+    width: 100vw;
+  }
+  #imagen-fertilizacion {
+    width: 80vw;
+  }
+  .multimedia {
+    background-color: $bg-secondary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    &-video {
+      display: flex;
+      justify-content: center;
+      margin: auto; 
+      .video {
+        background-color: $light;
+        width: 100%;
+        height: 40vh;  
+      }   
+    }
+  }
+
+  // vista tablet
+  @media (min-width:768px) {
+    .row-bonsai {
+      #imagen-fertilizacion {
+        width: 90vw;
+      }
+    }
+  }
+  
+  @media (min-width:992px) {
+    #img__poda {
+      height: fit-content;
+    }
+    #cuidados-bonsai {
+      width: 50vw;
+    }
+    .content-fertilizacion {
+      display: flex;
+      justify-content: space-between;
+    }
+    #imagen-fertilizacion {
+      height: fit-content;
+    }
+    .multimedia-video {
+      .video {
+        width: 60vw;
+        height: 70vh;
+        margin: 40px 0px;
+      }
+    } 
+  }
